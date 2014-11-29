@@ -1,0 +1,38 @@
+.container#content
+  .row
+    .col-xs-10.col-xs-offset-1.col-sm-offset-1.col-sm-10
+      h1 Listing companies
+
+      table
+        thead
+          tr
+            th Logo large
+            th Logo small
+            th Description
+            th Size
+            th Email
+            th Location
+            th Industry
+            th Subdomain
+            th
+            th
+            th
+
+        tbody
+          - @companies.each do |company|
+            tr
+              td = company.logo_large
+              td = company.logo_small
+              td = company.description
+              td = company.size
+              td = company.email
+              td = company.location
+              td = company.industry_id
+              td = company.subdomain
+              td = link_to 'Show', company
+              td = link_to 'Edit', edit_company_path(company)
+              td = link_to 'Destroy', company, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+      br
+
+      = link_to 'New Company', new_company_path

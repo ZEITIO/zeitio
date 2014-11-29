@@ -1,0 +1,28 @@
+header
+  nav.navbar.navbar-custom role="navigation"
+    .container
+      .navbar-header
+        button.navbar-toggle.collapsed data-target="#topbar" data-toggle="collapse" type="button"
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand.page-scroll href="/"
+          | JobSpot
+      .collapse.navbar-collapse.navbar-right.navbar-main-collapse#topbar
+        ul.nav.navbar-nav
+          li.hidden
+            a href="#home" 
+          li
+            a.companies.btn href="/companies"  Companies
+          li
+            a.vacancies.btn href="/vacancies"  Vacancies
+          li
+            a.login.btn href="/login"  Login
+          li
+            a.employers.btn href="/employers"  Employers
+          li
+            form
+              a.search
+                | Search
+              input id="search" name="search" type="text" placeholder="Search..."
