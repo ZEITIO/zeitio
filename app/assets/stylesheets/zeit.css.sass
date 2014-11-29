@@ -1,56 +1,29 @@
 /*!
- * Jobspot stylesheet
+ * Zeitio stylesheet
 
-$font-standard: 'Gotham', Arial, sans-serif
-$font-rounded: 'GothamRounded', Arial, sans-serif
+$font-body: 'museo_sans300', Arial, sans-serif
+$font-header: 'museo_sans500', Arial, sans-serif
 $grey-background: #f3f5f6
 
 @font-face
-  font-family: 'Gotham'
-  src: url('Gotham-Bold.eot?#iefix') format('embedded-opentype'), url('Gotham-Bold.otf')  format('opentype'), url('Gotham-Bold.woff') format('woff'), url('Gotham-Bold.ttf') format('truetype'), url('Gotham-Bold.svg#Gotham-Bold') format('svg')
-  font-weight: 600
+  font-family: 'museo_sans300'
+  src: url('museosans_300-webfont.eot')
+  src: url('museosans_300-webfont.eot?#iefix') format("embedded-opentype"), url('museosans_300-webfont.woff2') format("woff2"), url('museosans_300-webfont.woff') format("woff"), url('museosans_300-webfont.ttf') format("truetype"), url('museosans_300-webfont.svg#museo_sans300') format("svg")
+  font-weight: normal
   font-style: normal
 
-@font-face 
-  font-family: 'Gotham'
-  src: url('Gotham-Medium.eot?#iefix') format('embedded-opentype'), url('Gotham-Medium.otf') format('opentype'), url('Gotham-Medium.woff') format('woff'), url('Gotham-Medium.ttf') format('truetype'), url('Gotham-Medium.svg#Gotham-Medium') format('svg')
-  font-weight: 300
-  font-style: normal
-  
-@font-face
-  font-family: 'Gotham'
-  src: url('Gotham-Light.eot?#iefix') format('embedded-opentype'), url('Gotham-Light.otf') format('opentype'), url('Gotham-Light.woff') format('woff'), url('Gotham-Light.ttf') format('truetype'), url('Gotham-Light.svg#Gotham-Light') format('svg')
-  font-weight: 200
-  font-style: normal
 
 @font-face
-  font-family: 'GothamRounded'
-  src: url('GothamRounded-Light.eot?#iefix') format('embedded-opentype'), url('GothamRounded-Light.otf') format('opentype'), url('GothamRounded-Light.woff') format('woff'), url('GothamRounded-Light.ttf') format('truetype'), url('GothamRounded-Light.svg#GothamRounded-Light') format('svg')
-  font-weight: 100
-  font-style: normal
-
-@font-face 
-  font-family: 'GothamRounded'
-  src: url('GothamRounded-Book.eot?#iefix') format('embedded-opentype'), url('GothamRounded-Book.otf') format('opentype'), url('GothamRounded-Book.woff') format('woff'), url('GothamRounded-Book.ttf') format('truetype'), url('GothamRounded-Book.svg#GothamRounded-Book') format('svg')
-  font-weight: 200
-  font-style: normal
-
-@font-face 
-  font-family: 'GothamRounded'
-  src: url('GothamRounded-Medium.eot?#iefix') format('embedded-opentype'), url('GothamRounded-Medium.otf') format('opentype'), url('GothamRounded-Medium.woff') format('woff'), url('GothamRounded-Medium.ttf') format('truetype'), url('GothamRounded-Medium.svg#GothamRounded-Medium') format('svg')
-  font-weight: 300
-  font-style: normal
-
-@font-face
-  font-family: 'GothamRounded'
-  src: url('GothamRounded-Bold.eot?#iefix') format('embedded-opentype'), url('GothamRounded-Bold.otf') format('opentype'), url('GothamRounded-Bold.woff') format('woff'), url('GothamRounded-Bold.ttf') format('truetype'), url('GothamRounded-Bold.svg#GothamRounded-Bold') format('svg')
-  font-weight: 600
+  font-family: 'museo_sans500'
+  src: url('museosans_500-webfont.eot')
+  src: url('museosans_500-webfont.eot?#iefix') format("embedded-opentype"), url('museosans_500-webfont.woff2') format("woff2"), url('museosans_500-webfont.woff') format("woff"), url('museosans_500-webfont.ttf') format("truetype"), url('museosans_500-webfont.svg#museo_sans500') format("svg")
+  font-weight: normal
   font-style: normal
 
 body
   width: 100%
   height: 100%
-  font-family: $font-standard
+  font-family: $font-body
   font-weight: 200
   color: #000
   background-color: #fff
@@ -61,7 +34,7 @@ html
 
 h1, h2, h3, h4, h5, h6
   margin: 0 0 35px
-  font-family: $font-standard
+  font-family: $font-header
   font-weight: 300
   letter-spacing: 0
 
@@ -71,7 +44,6 @@ p
   line-height: 1.5
 a
   color: #219ab3
-  font-family: $font-rounded
   text-transform: uppercase
   -webkit-transition: all .2s ease-in-out
   -moz-transition: all .2s ease-in-out
