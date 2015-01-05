@@ -1,9 +1,17 @@
 /*!
  * Zeitio stylesheet
 
-$font-body: 'museo_sans300', Arial, sans-serif
-$font-header: 'museo_sans500', Arial, sans-serif
-$grey-background: #f3f5f6
+$font-body: 'Montserrat', Arial, sans-serif
+$font-headers: 'museo_sans500', Arial, sans-serif
+$background-color-black: #191919
+$background-color-gray: #f3f5f6
+$title-color-black: #212121
+$body-color-black: #4d4d4d
+$body-color-gray: #747474
+$body-color-fullblack: #000000
+$color-blue: #0a8bbb
+$color-gray: #747474
+$color-black: #212121
 
 @font-face
   font-family: 'museo_sans300'
@@ -11,7 +19,6 @@ $grey-background: #f3f5f6
   src: url('museosans_300-webfont.eot?#iefix') format("embedded-opentype"), url('museosans_300-webfont.woff2') format("woff2"), url('museosans_300-webfont.woff') format("woff"), url('museosans_300-webfont.ttf') format("truetype"), url('museosans_300-webfont.svg#museo_sans300') format("svg")
   font-weight: normal
   font-style: normal
-
 
 @font-face
   font-family: 'museo_sans500'
@@ -34,7 +41,7 @@ html
 
 h1, h2, h3, h4, h5, h6
   margin: 0 0 35px
-  font-family: $font-header
+  font-family: $font-headers
   font-weight: 300
   letter-spacing: 0
 
@@ -63,7 +70,7 @@ a
   color: #fff
   position: relative
   background: url(retina/intro-bg-retina.png) no-repeat bottom center
-  background-color: #5c628e
+  background-color: white
   -webkit-background-size: cover
   -moz-background-size: cover
   background-size: cover
@@ -73,30 +80,6 @@ a
     padding-bottom: 20px
     display: block
     color: white
-    &.learn
-      width: 220px
-      border: 1px solid white
-      float: right
-    &.register
-      width: 220px
-      background: #3396d2
-  .intro-body
-    display: table-cell
-    vertical-align: middle
-    .brand-heading
-      font-size: 46px
-      padding-top: 0
-      margin-top: 110px
-      margin-bottom: 0
-      padding-bottom: 0
-    .intro-text
-      font-size: 25px
-      margin-top: 20px
-      padding-top: 0
-      margin-bottom: 50px
-      padding-bottom: 0
-      text-transform: initial
-      color: #1d2346
   p
     color: #9b9fb6
     margin-top: 40px
@@ -104,13 +87,8 @@ a
     span
       color: white
       font-weight: 600
-  .scrolldown
-    background: url(retina/down-arrow-retina.png) no-repeat center center
-    background-size: contain
-    display: block
-    width: 40px
-    height: 40px
-    margin: 55px auto 0 auto
+  #carousel-intro
+    margin-top: 120px
 .home-content
   h2
     color: #262c56
@@ -128,9 +106,9 @@ a
       padding-top: 80px
       text-align: center
   .apply-directly
-    background-color: $grey-background
+    background-color: $background-color-gray
   .browse-companies
-    background-color: $grey-background
+    background-color: $background-color-gray
   .testimonials
     background: url(retina/testimonial-bg-retina.png) no-repeat center center
     background-size: cover
@@ -310,7 +288,6 @@ p.source
   -webkit-transition: all .3s ease-in-out
   -moz-transition: all .3s ease-in-out
   transition: all .3s ease-in-out
-
 .btn-default
   border: 1px solid #219ab3
   color: #219ab3
@@ -320,5 +297,3 @@ p.source
     outline: 0
     color: #000
     background-color: #219ab3
-ul.banner-social-buttons
-  margin-top: 0

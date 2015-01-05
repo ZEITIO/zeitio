@@ -1,130 +1,43 @@
-header
-  position: fixed
-  z-index: 110
-  width: 100%
+$font-body: 'Montserrat', Arial, sans-serif
+$font-headers: 'museo_sans500', Arial, sans-serif
+$background-color-black: #191919
+$background-color-gray: #f3f5f6
+$title-color-black: #212121
+$body-color-black: #4d4d4d
+$body-color-gray: #747474
+$body-color-fullblack: #000000
+$color-blue: #0a8bbb
+$color-gray: #747474
+$color-black: #212121
+
+.navbar
+  background-color: white
+  -webkit-border-radius: 0
+  -moz-border-radius: 0
   height: 90px
-  &.smaller
-    background: white
-    border-bottom: 1px solid #e2e7e9
-    -webkit-transition: all 0.5s ease
-    -moz-transition: all 0.5s ease
-    -o-transition: all 0.5s ease
-    -ms-transition: all 0.5s ease
-    transition: all 0.5s ease
-    .navbar
-      background-color: transparent
-      -webkit-border-radius: 0
-      -moz-border-radius: 0
-      height: 90px
-      width: 100%
-      padding-top: 20px
-      margin-left: auto
-      margin-right: auto
-      border-radius: 0
-      border: 0
-      margin-bottom: 0
-      button
-        background: url(retina/menu-icon.png) no-repeat center center
-        background-size: 32px
-        background-color: #262c56
-      a.navbar-brand
-        text-indent: -9999px
-        background: url(retina/jobspot-logo-purple-retina.png) no-repeat center center
-        background-size: 141px
-        width: 141px
-        height: 34px
-        display: block
-        margin-top: 10px
-      .search
-        text-indent: -9999px
-        background: url(retina/search-white-retina.png) no-repeat center center
-        display: block
-        width: 40px
-        height: 40px
-        background-size: 20px
-        cursor: pointer
-      .current
-        border-bottom: 2px solid white
-      .employers
-        color: white
-        background: #262c56
-        border: 2px solid transparent
-        &:hover
-          border: 2px solid #262c56
-          color: #262c56
-      .login
-        background: url(retina/login-icon-white-retina.png) no-repeat 68px 19px
-        background-size: 10px
-        padding-right: 20px
-      a
-        color: #a7b6bf
-        font-size: 12px
-        margin: 0 10px
-        display: block
-        &:hover
-          background-color: transparent
-          color: #262c56
-  .navbar
-    background-color: transparent
-    -webkit-border-radius: 0
-    -moz-border-radius: 0
+  width: 100%
+  padding-top: 20px
+  margin-left: auto
+  margin-right: auto
+  border-radius: 0
+  border: 0
+  margin-bottom: 0
+  ul
+    float: right
+  a.navbar-brand
+    background: url(retina/jobspot-logo-purple-retina.png) no-repeat center center
+    background-size: 141px
+    width: 300px
     height: 90px
-    width: 100%
-    max-width: 1170px
-    padding-top: 20px
-    margin-left: auto
-    margin-right: auto
-    border-radius: 0
-    border-bottom: 1px solid #5c628f
-    margin-bottom: 0
-    button
-      background: url(retina/menu-icon.png) no-repeat center center
-      background-size: 32px
-    a.navbar-brand
-      text-indent: -9999px
-      background: url(retina/jobspot-logo-white-retina.png) no-repeat center center
-      background-size: 141px
-      width: 141px
-      height: 34px
-      display: block
-      margin-top: 10px
-    .search
-      text-indent: -9999px
-      background: url(retina/search-purple-retina.png) no-repeat center center
-      display: block
-      width: 40px
-      height: 40px
-      background-size: 20px
-      cursor: pointer
-      &.purple-search
-        background: url(retina/search-white-retina.png) no-repeat center center
-        background-size: 20px
-        position: absolute
-        width: 30px
-    form
-      float: left
-      margin-top: 6px
-      input
-        display: none
-        height: 40px
-        padding: 0 0 0 40px
-        -webkit-border-radius: 4px
-        -moz-border-radius: 4px
-        border-radius: 4px
-    .current
-      border-bottom: 2px solid white
-    .employers
-      color: white
-      background: #262c56
-      border: 2px solid transparent
-      &:hover
-    .login
-      background: url(retina/login-icon-purple-retina.png) no-repeat 68px 19px
-      background-size: 10px
-      padding-right: 20px
-    a
-      color: white
-      font-size: 12px
-      margin: 0 10px
-      &:hover
-        background-color: transparent
+    display: block
+    margin-top: 10px
+    text-transform: uppercase
+  a
+    font-family: $font-headers
+    color: $body-color-gray
+    font-size: 12px
+    margin: 0 10px
+    display: block
+    &:hover
+      background-color: transparent
+      color: #262c56
