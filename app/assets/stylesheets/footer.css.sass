@@ -1,5 +1,5 @@
-$font-body: 'Montserrat', Arial, sans-serif
-$font-headers: 'museo_sans500', Arial, sans-serif
+$font-body: 'proxima_nova', Arial, sans-serif
+$font-headers: 'museo_sans', Arial, sans-serif
 $background-color-black: #191919
 $background-color-gray: #f3f5f6
 $title-color-black: #212121
@@ -8,64 +8,44 @@ $body-color-gray: #747474
 $body-color-fullblack: #000000
 $color-blue: #0a8bbb
 $color-gray: #747474
+$color-light-gray: #d4d5d6
 $color-black: #212121
+$color-white: #ffffff
 
-footer
-  padding: 50px 0
-  p
-    margin: 0
 .footer
-  color: white
-  .letstalk
-    background-color: #262c56
-  .copyright
-    background-color: #1e244a
-    text-align: center
-    height: 100px
-    p
-      line-height: 100px
-      margin: 0
-      font-size: 16px
-  .contactus
-    background-color: #3396d2
-    padding: 20px 0
-    width: 220px
-    color: white
+  color: $color-white
+  padding: 40px 0
+  background-color: $background-color-black
+  .logo
     display: block
-    float: right
-  p
+    font-size: 40px
+    color: white
+    font-family: $font-headers
+    font-weight: 300
+    text-align: center
+    img
+      width: 90px
+      height: auto
+      display: block
+      margin: 0 auto
+  .copy-info
+    font-family: $font-headers
+    font-weight: 300
+    text-align: center
+    font-size: 16px
+    margin-top: 40px
+    line-height: 28px
+  .heart
+  .copyright
+    text-align: center
+    font-size: 14px
+    font-weight: 300
+    font-family: $font-headers
+    padding-top: 20px
     span
-      font-weight: 600
-  .cmon
-    padding: 60px 0 0 0
-    border-bottom: 2px solid #515678
-  .sitelinks
-    padding: 30px 0
-    .subpages
-      line-height: 40px
-      a
-        color: #9396ab
-        margin: 0 24px 0 0
-    .socialmedia
-      a
-        text-indent: -9999px
-        display: block
-        width: 40px
-        height: 40px
-        float: left
-        margin: 0 0 0 20px
-        background-position: center center
-        background-size: 40px
-        &:first-of-type
-          margin-left: 50px
-        &.facebook
-          background-image: url(retina/facebook-icon-retina.png)
-        &.twitter
-          background-image: url(retina/twitter-icon-retina.png)
-          background-position: center center
-        &.linkedin
-          background-image: url(retina/linkedin-icon-retina.png)
-          background-position: center center
-        &.youtube
-          background-image: url(retina/youtube-icon-retina.png)
-          background-position: center center
+      background: image-url("love-icon.png") center center no-repeat
+      width: 14px
+      height: 14px
+      margin: 0 10px
+      display: inline-block
+      background-size: contain

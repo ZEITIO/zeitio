@@ -3,12 +3,12 @@ html
   head
     title Zeit.io
     = stylesheet_link_tag     'application', media: 'all', 'data-turbolinks-track' => true
-    = stylesheet_link_tag     'application', 'https://fonts.googleapis.com/css?family=Montserrat:400,700', :media => 'all'
     = javascript_include_tag  'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
+    = favicons
     meta content="width=device-width, initial-scale=1" name="viewport" /
 
-  body id="#{build_body_id}"
+  body id="#{build_body_id}" data-spy="scroll" data-target="#zeitbar" data-offset="100"
     = render "/layouts/header"
     = yield
     = render "/layouts/footer"

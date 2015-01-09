@@ -1,99 +1,298 @@
-.intro
-  .intro-body
-    .container
-      .row
-        .col-xs-12.col-sm-12.col-md-12
-          #carousel-intro.carousel.slide data-ride="carousel" 
-            ol.carousel-indicators
-              li data-slide-to="0" data-target="#carousel-intro" 
-              li data-slide-to="1" data-target="#carousel-intro" 
-              li.active data-slide-to="2" data-target="#carousel-intro" 
-            .carousel-inner role="listbox" 
-              .item
-                img alt=("First slide [900x500]") data-holder-rendered="true" data-src=("holder.js/900x500/auto/#777:#555/text:First slide") src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyIvPjxnPjx0ZXh0IHg9IjMxNy43MzQzNzUiIHk9IjI1MCIgc3R5bGU9ImZpbGw6IzU1NTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZTo0MnB0O2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPkZpcnN0IHNsaWRlPC90ZXh0PjwvZz48L3N2Zz4=" /
-              .item
-                img alt=("Second slide [900x500]") data-holder-rendered="true" data-src=("holder.js/900x500/auto/#666:#444/text:Second slide") src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzY2NiIvPjxnPjx0ZXh0IHg9IjI3Ny4yODEyNSIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNDQ0O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjQycHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+U2Vjb25kIHNsaWRlPC90ZXh0PjwvZz48L3N2Zz4=" /
-              .item.active
-                img alt=("Third slide [900x500]") data-holder-rendered="true" data-src=("holder.js/900x500/auto/#555:#333/text:Third slide") src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzU1NSIvPjxnPjx0ZXh0IHg9IjMwOC40MjE4NzUiIHk9IjI1MCIgc3R5bGU9ImZpbGw6IzMzMztmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZTo0MnB0O2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPlRoaXJkIHNsaWRlPC90ZXh0PjwvZz48L3N2Zz4=" /
-            a.left.carousel-control data-slide="prev" href="#carousel-intro" role="button" 
-              span.glyphicon.glyphicon-chevron-left aria-hidden="true" 
-              span.sr-only Previous
-            a.right.carousel-control data-slide="next" href="#carousel-intro" role="button" 
-              span.glyphicon.glyphicon-chevron-right aria-hidden="true" 
-              span.sr-only Next
 .home-content
-  #how-it-works.how-it-works.tour
+  #hello.intro
+    .intro-body
+      .container-fluid
+        .row
+          .col-xs-12.col-sm-12.col-md-12
+            #carousel-intro.carousel.slide data-ride="carousel"
+              .carousel-inner role="listbox"
+                .item.slide1
+                  = image_tag "slide1-powerful-web-technologies.png"
+                  .carousel-caption
+                    h2
+                      | We create amazing web apps with modern web technologies
+                    p
+                      | We use HTML, Ruby, Java, C++ and many moreto create powerful solutions for your business.
+                .item.slide2
+                  = image_tag "slide1-powerful-web-technologies.png"
+                  .carousel-caption
+                    h2
+                      | We create amazing web apps with modern web technologies
+                    p
+                      | We use HTML, Ruby, Java, C++ and many moreto create powerful solutions for your business.
+                .item.slide3
+                  = image_tag "slide1-powerful-web-technologies.png"
+                  .carousel-caption
+                    h2
+                      | We create amazing web apps with modern web technologies
+                    p
+                      | We use HTML, Ruby, Java, C++ and many moreto create powerful solutions for your business.
+              ol.carousel-indicators
+                li data-slide-to="0" data-target="#carousel-intro"
+                li data-slide-to="1" data-target="#carousel-intro"
+                li.active data-slide-to="2" data-target="#carousel-intro"
+              a.left.carousel-control data-slide="prev" href="#carousel-intro" role="button"
+                span.glyphicon.glyphicon-chevron-left aria-hidden="true"
+                span.sr-only Previous
+              a.right.carousel-control data-slide="next" href="#carousel-intro" role="button"
+                span.glyphicon.glyphicon-chevron-right aria-hidden="true"
+                span.sr-only Next
+  #clients.clients
+    .container
+      .row
+        .col-xs-12.col-xs-offset-0.col-sm-8.col-sm-offset-2
+          h2
+            | These clients trust Zeit.io for their online solutions
+      .row
+        .col-xs-12
+          .client-logos
+            = image_tag "http://placehold.it/200x200"
+            = image_tag "http://placehold.it/200x200"
+            = image_tag "http://placehold.it/200x200"
+            = image_tag "http://placehold.it/200x200"
+            = image_tag "http://placehold.it/200x200"
+      .row
+        .col-xs-12
+          .get-in-touch
+            a.blue-button href="#contact"
+              | Get in touch
+  #what-we-do
     .container
       .row
         .col-xs-12
           h2
-            | How it works
-          p
-            | Get a digital tour of the company you like, it’s that simple!
-  #browse-companies.browse-companies.tour
-    .container
-      .step1
-        img src="/assets/retina/step1-icon-retina.png" alt=""
+            | We do what we do best
       .row
-        .col-xs-12.col-sm-6
-          .description-left
-            img src="/assets/retina/browse-companies-icon-retina.png" alt=""
+        .col-xs-12.col-sm-4
+          .block.analyze
+            = image_tag "analyze.png"
             h3
-              | Browse companies
+              | Analyze
             p
-              | JobSpot offers a number of exciting company profiles for candidates to view.
-        .col-xs-12.col-sm-6
-          .graphic-right
-            img src="/assets/retina/browse-companies-graphic-retina.png" alt=""
-  #find-your-match.find-your-match.tour
+              | By analyzing and doing research we gain a clear understanding on the needs of our clients.
+        .col-xs-12.col-sm-4
+          .block.solution
+            = image_tag "solution.png"
+            h3
+              | Solution
+            p
+              | Our solutions are effective, scalable, easy to use and maintainable.
+        .col-xs-12.col-sm-4
+          .block.development
+            = image_tag "development.png"
+            h3
+              | Development
+            p
+              | We use the latest and greatest technologies to develop modern, fast, clean and secure code.
+  #black-contact.contact-us-midscreen
     .container
-      .step2
-        img src="/assets/retina/step2-icon-retina.png" alt=""
       .row
-        .col-xs-12.col-sm-6
-          .graphic-left
-            img src="/assets/retina/find-your-match-graphic-retina.png" alt=""
-        .col-xs-12.col-sm-6
-          .description-right
-            img src="/assets/retina/find-your-match-icon-retina.png" alt=""
-            h3
-              | Find your match
-            p
-              | Get a unique look inside offices, meet the staff and see how they work.
-  #apply-directly.apply-directly.tour
-    .container
-      .step3
-        img src="/assets/retina/step3-icon-retina.png" alt=""
-      .row
-        .col-xs-12.col-sm-6
-          .description-left
-            img src="/assets/retina/apply-directly-icon-retina.png" alt=""
-            h3
-              | Apply directly
-            p
-              | Once you have found your match, you can easily apply directly to jobs that suit you best.
-        .col-xs-12.col-sm-6
-          .graphic-right
-            img src="/assets/retina/apply-directly-graphic-retina.png" alt=""
-  #companies.companies.tour
+        .col-xs-12.col-sm-8
+          h2
+            | We help envision your next product and we love to create great solutions.
+        .col-xs-12.col-xs-offset-0.col-sm-3.col-sm-offset-1
+          a.blue-button href="#contact"
+            | Contact us
+          p.byline
+            | Don’t be shy! We don’t bite!
+  #testimonials
     .container
       .row
         .col-xs-12
           h2
-            | You’re in good company
-          p
-            | We love companies that do things differently and think outside the box.
+            | What our clients say
+      .row
+        .col-xs-12.col-sm-6
+          .testimonial-block
+            .col-xs-2
+              .testimonial-potrait
+                = image_tag "client-empty.png"
+            .col-xs-8
+              .testimonial-message
+                p.message
+                 | “Nullam dapibus blandit orci, viverra gravida dui Zeit is the bomb and you know it aecenas fringilla urna eu nisl scelerisque.”
+                p.name
+                  | Steve Jobs
+                p.title
+                  | pa crit luck noob
+        .col-xs-12.col-sm-6
+          .testimonial-block
+            .col-xs-2
+              .testimonial-potrait
+                = image_tag "client-empty.png"
+            .col-xs-8
+              .testimonial-message
+                p.message
+                 | “Nullam dapibus blandit orci, viverra gravida dui Zeit is the bomb and you know it aecenas fringilla urna eu nisl scelerisque.”
+                p.name
+                  | Steve Jobs
+                p.title
+                  | Void picker
+        .col-xs-12.col-sm-6
+          .testimonial-block
+            .col-xs-2
+              .testimonial-potrait
+                = image_tag "client-empty.png"
+            .col-xs-8
+              .testimonial-message
+                p.message
+                 | “Nullam dapibus blandit orci, viverra gravida dui Zeit is the bomb and you know it aecenas fringilla urna eu nisl scelerisque.”
+                p.name
+                  | Steve Jobs
+                p.title
+                  | bara op
+        .col-xs-12.col-sm-6
+          .testimonial-block
+            .col-xs-2
+              .testimonial-potrait
+                = image_tag "client-empty.png"
+            .col-xs-8
+              .testimonial-message
+                p.message
+                 | “Nullam dapibus blandit orci, viverra gravida dui Zeit is the bomb and you know it aecenas fringilla urna eu nisl scelerisque.”
+                p.name
+                  | Steve Jobs
+                p.title
+                  | carry techies
+  #our-team
+    .owl-nav
+      //a.prev Previous
+      //a.next Next
+    .container
+      .row
         .col-xs-12
-          .row
-            .col-xs-10.col-xs-offset-1.col-sm-3.col-sm-offset-0
-              img src="/assets/retina/mcash-logo-retina.png" alt=""
-            .col-xs-10.col-xs-offset-1.col-sm-3.col-sm-offset-0
-              img src="/assets/retina/amesto-logo-retina.png" alt=""
-            .col-xs-10.col-xs-offset-1.col-sm-3.col-sm-offset-0
-              img src="/assets/retina/evry-logo-retina.png" alt=""
-            .col-xs-10.col-xs-offset-1.col-sm-3.col-sm-offset-0
-              img src="/assets/retina/dipper-logo-retina.png" alt=""
-  #testimonials.testimonials.tour
+          h2
+            | Meet our Team
+          p
+            | We share the same goal of crafting beautiful digital solutions for clients across all platforms.
+    .container-fluid
+      .row
+        .col-xs-12
+          .team-cards
+            .team-centered
+              .card.fernando
+                .portrait
+                .name-title
+                  p
+                    | Fernando Sainz
+                    br
+                    span
+                      | Void picker
+                .description
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet purus et orci tincidunt tempus. Ctetur adipiscing elit. Phasellus aliqctetur adipiscing elit. Phasellus aliq.
+                .social-media
+                  a.linkedin href="#"
+                    | LinkedIn
+              .card.alejandro
+                .portrait
+                .name-title
+                  p
+                    | Alejandro Riera
+                    br
+                    span
+                      | Void picker
+                .description
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet purus et orci tincidunt tempus. Ctetur adipiscing elit. Phasellus aliqctetur adipiscing elit. Phasellus aliq.
+                .social-media
+                  a.linkedin href="#"
+                    | LinkedIn
+                  a.twitter href="#"
+                    | Twitter
+              .card.hendrik
+                .portrait
+                .name-title
+                  p
+                    | Hendrik Kleinwächter
+                    br
+                    span
+                      | Void picker
+                .description
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet purus et orci tincidunt tempus. Ctetur adipiscing elit. Phasellus aliqctetur adipiscing elit. Phasellus aliq.
+                .social-media
+                  a.linkedin href="#"
+                    | LinkedIn
+                  a.twitter href="#"
+                    | Twitter
+                  a.skype href="#"
+                    | Skype
+              .card.philip
+                .portrait
+                .name-title
+                  p
+                    | Philip Meissner
+                    br
+                    span
+                      | Void picker
+                .description
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet purus et orci tincidunt tempus. Ctetur adipiscing elit. Phasellus aliqctetur adipiscing elit. Phasellus aliq.
+                .social-media
+                  a.linkedin href="#"
+                    | LinkedIn
+                  a.twitter href="#"
+                    | Twitter
+                  a.skype href="#"
+                    | Skype
+              .card.christian
+                .portrait
+                .name-title
+                  p
+                    | Christian Semmler
+                    br
+                    span
+                      | Void picker
+                .description
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet purus et orci tincidunt tempus. Ctetur adipiscing elit. Phasellus aliqctetur adipiscing elit. Phasellus aliq.
+                .social-media
+                  a.linkedin href="#"
+                    | LinkedIn
+                  a.twitter href="#"
+                    | Twitter
+                  a.skype href="#"
+                    | Skype
+                  a.github href="#"
+                    | GitHub
+              .card.elias
+                .portrait
+                .name-title
+                  p
+                    | Elias Saalmann
+                    br
+                    span
+                      | Void picker
+                .description
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet purus et orci tincidunt tempus. Ctetur adipiscing elit. Phasellus aliqctetur adipiscing elit. Phasellus aliq.
+                .social-media
+                  a.linkedin href="#"
+                    | LinkedIn
+                  a.twitter href="#"
+                    | Twitter
+                  a.skype href="#"
+                    | Skype
+                  a.github href="#"
+                    | GitHub
+                  a.dribbble href="#"
+                    | Dribbble
+              .card.sarah
+                .portrait
+                .name-title
+                  p
+                    | Sarah Pais
+                    br
+                    span
+                      | Void picker
+                .description
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet purus et orci tincidunt tempus. Ctetur adipiscing elit. Phasellus aliqctetur adipiscing elit. Phasellus aliq.
+                .social-media
+                  a.linkedin href="#"
+                    | LinkedIn
+  #testimonials.testimonials
     .container
       .row
         .col-xs-12
@@ -104,12 +303,12 @@
           img src="/assets/retina/quote-icon-retina.png" alt=""
           .testimonial-area
             .storytell-area
-              #carousel.carousel.slide data-ride="carousel" 
+              #carousel.carousel.slide data-ride="carousel"
                 ol.carousel-indicators
-                  li data-slide-to="0" data-target="#carousel" 
-                  li.active data-slide-to="1" data-target="#carousel" 
-                  li data-slide-to="2" data-target="#carousel" 
-                .carousel-inner role="listbox" 
+                  li data-slide-to="0" data-target="#carousel"
+                  li.active data-slide-to="1" data-target="#carousel"
+                  li data-slide-to="2" data-target="#carousel"
+                .carousel-inner role="listbox"
                   .item
                     .testimonial-area
                       .storytell-area
@@ -158,20 +357,24 @@
                                     | Daniel Doderline,
                                     a href="#"
                                       |  CEO at Mcash
-  #get-started.get-started
+  #contact
     .container
       .row
-        .col-xs-12.col-sm-6.ready-up
+        .col-xs-12
           h2
-            | Read to try JobSpot?
+            | Get in touch
           p
-            | Create a free user account and check out what JobSpot has to offer.
-          a.btn.register href="#"
-            | Register
-        .col-xs-12.col-sm-6.already-member
-          h2
-            | Already a member?
-          p
-            | If you’re already a member, login using your username and password.
-          a.btn.login href="#"
-            | Login
+            | Want to get in touch? Just write us a message and we will get back to you!
+      .row
+        .col-xs-12
+          form.horizontal-form
+            input.form-control.message type="text"
+            input.form-control.name type="text"
+            input.form-control.email type="email"
+            button.submit type="submit"
+            p.alert.alert-success
+              icon.cloud
+              | Thank you for your message! We will get back to you before you know it!
+            p.alert.alert-danger
+              icon.exclamation-mark
+              | Something went wrong :(. Please double check for any missing information.

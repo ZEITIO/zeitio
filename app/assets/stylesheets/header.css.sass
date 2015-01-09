@@ -1,5 +1,5 @@
-$font-body: 'Montserrat', Arial, sans-serif
-$font-headers: 'museo_sans500', Arial, sans-serif
+$font-body: 'proxima_nova', Arial, sans-serif
+$font-headers: 'museo_sans', Arial, sans-serif
 $background-color-black: #191919
 $background-color-gray: #f3f5f6
 $title-color-black: #212121
@@ -8,10 +8,12 @@ $body-color-gray: #747474
 $body-color-fullblack: #000000
 $color-blue: #0a8bbb
 $color-gray: #747474
+$color-light-gray: #d4d5d6
 $color-black: #212121
+$color-white: #ffffff
 
 .navbar
-  background-color: white
+  background: $color-white
   -webkit-border-radius: 0
   -moz-border-radius: 0
   height: 90px
@@ -25,19 +27,50 @@ $color-black: #212121
   ul
     float: right
   a.navbar-brand
-    background: url(retina/jobspot-logo-purple-retina.png) no-repeat center center
-    background-size: 141px
-    width: 300px
-    height: 90px
+    font-size: 46px
+    width: auto
+    height: auto
+    line-height: 46px
     display: block
-    margin-top: 10px
+    margin: 0 0 0 0
     text-transform: uppercase
+    padding: 0 0 0 0
+    color: $color-black
+    img
+      width: 80px
+      display: inline-block
+      margin: 0 10px 0 0
+      padding: 0
+      float: left
+      &:hover
+        -webkit-transform: rotate(180deg)
+        -moz-transform: rotate(180deg)
+        -ms-transform: rotate(180deg)
+        -o-transform: rotate(180deg)
+        transform: rotate(180deg)
+        -webkit-transition: transform 1s ease
+        -moz-transition: transform 1s ease
+        -o-transition: transform 1s ease
+        transition: transform 1s ease
   a
     font-family: $font-headers
     color: $body-color-gray
-    font-size: 12px
+    font-size: 16px
     margin: 0 10px
     display: block
+    font-weight: 100
     &:hover
       background-color: transparent
       color: #262c56
+.navbar-default
+  .navbar-nav
+    li
+      a
+        &:hover
+          border-bottom: 4px solid $color-light-gray
+    .active
+      a
+        background-color: transparent
+        border-bottom: 4px solid $color-gray
+        &:hover
+          background-color: tranparent
